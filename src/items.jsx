@@ -13,7 +13,7 @@ export const WishlistState = atom({
     {
       id: 1,
       name: "Gaming Console",
-      price: 9990.0,
+      price: 3500.0,
       image: PortableGamingDevice,
       rating: 4.2,
       reviews: 2500,
@@ -23,7 +23,7 @@ export const WishlistState = atom({
     {
       id: 2,
       name: "Ear Pods",
-      price: 9990.0,
+      price: 3300.0,
       image: Earpods,
       rating: 4.2,
       reviews: 2500,
@@ -33,7 +33,7 @@ export const WishlistState = atom({
     {
       id: 3,
       name: "Headphone",
-      price: 9990.0,
+      price: 1500.0,
       image: Headphones,
       rating: 4.2,
       reviews: 2500,
@@ -43,7 +43,7 @@ export const WishlistState = atom({
     {
       id: 4,
       name: "Radio Speaker",
-      price: 289.0,
+      price: 6200.0,
       image: Speaker,
       rating: 4,
       reviews: 1000,
@@ -53,7 +53,7 @@ export const WishlistState = atom({
     {
       id: 5,
       name: "Vintage Games",
-      price: 9990.0,
+      price: 2000.0,
       image: VintageGame,
       rating: 4.2,
       reviews: 2500,
@@ -63,7 +63,7 @@ export const WishlistState = atom({
     {
       id: 6,
       name: "Microphone",
-      price: 9990.0,
+      price: 999.0,
       image: Mic,
       rating: 4.2,
       reviews: 2500,
