@@ -8,13 +8,13 @@ export function Navbar(){
                 Amazing Cart
             </div>
             <div className="font-poppins md:flex gap-20 text-sm text-primary ">
-                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'><Link to={'/'}>Home</Link></p>
-                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'><Link to='/wishlist'>Wishlist</Link></p>
-                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'><Link to='/cart'>Cart</Link></p>
+                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1 active:scale-95'><Link to={'/'}>Home</Link></p>
+                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1 active:scale-95'><Link to='/wishlist'>Wishlist</Link></p>
+                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1 active:scale-95'><Link to='/cart'>Cart</Link></p>
             </div>
-            <div className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer'>
-                <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} /></Link>
-            </div>
+            <Link to='/cart'><div className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer active:scale-95'>
+                <FontAwesomeIcon icon={faCartShopping} />
+            </div></Link>
         </div>
     </div>
 }
