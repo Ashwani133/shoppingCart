@@ -30,9 +30,9 @@ export function ProductCard({image,name,price,reviews,id}){
 
 
     return <div className="h-[100vh] sticky top-0 z-100 relative flex justify-center items-center">
-        <div className="h-[85%] w-[85%] bg-black shadow-[0px_10px_30px_5px_hsl(214.29_17.41%_40%)] shadow-[0px_10px_30px_5px_hsl(214.29_17.41%_40%)] rounded p-10">
+        <div className="h-[85%] w-[85%] bg-black rounded p-10">
             <div className='flex justify-between'>
-                <p className={`font-dancingScript text-primary text-2xl font-extrabold ${location.pathname ==='/wishlist'?'hover:bg-[hsl(18.12_99.02%_60%)] p-1 rounded cursor-pointer active:scale-95':''}`}>
+                <p className={`font-dancingScript text-primary text-2xl font-extrabold ${location.pathname ==='/wishlist'?'p-1 rounded cursor-pointer active:scale-95':''}`}>
                 <Link className={`${location.pathname === '/wishlist'?'cursor-pointer':'cursor-text'}`} to='/'>Amazing cart</Link>
                 </p>
                 <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer active:scale-95'/></Link>
@@ -48,7 +48,7 @@ export function ProductCard({image,name,price,reviews,id}){
                     </div>
                     <p>Reviews: {reviews}</p>
                     </div>
-                <button onClick={() => handleAddToCartClick(id)} className="p-2 px-10 bg-[hsl(18.12_99.02%_60%)] font-bold text-primary rounded hover:opacity-85 lg:mt-20 md:mt-10 mt-5 active:scale-95">Add to cart</button>
+                <button onClick={() => handleAddToCartClick(id)} className="p-2 px-10 bg-[hsl(18.12_99.02%_60%)] font-bold text-primary rounded lg:mt-20 md:mt-10 mt-5 active:scale-95">Add to cart</button>
             </div>
             <div className="flex-1 flex justify-center max-h-[100%] max-w-[100%] fade"><img src={image} alt="product image" className="w-full h-full max-w-[50%] max-h-[50%] md:max-w-[80%] md:max-h-[80%] lg:max-w-[75%] lg:max-h-[75%] object-contain lg:mt-20 md:mt-10 mt-20"/></div>
             </div>
