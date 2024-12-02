@@ -8,12 +8,12 @@ export function Navbar(){
                 Amazing Cart
             </div>
             <div className="font-poppins md:flex gap-20 text-sm text-primary ">
-                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'>Home</p>
-                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'>Wishlist</p>
+                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'><Link to={'/'}>Home</Link></p>
+                <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'><Link to='/wishlist'>Wishlist</Link></p>
                 <p className='hover:bg-[hsl(18.12_99.02%_60%)] hover:rounded cursor-pointer p-1'><Link to='/cart'>Cart</Link></p>
             </div>
             <div className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer'>
-            <FontAwesomeIcon icon={faCartShopping} />
+                <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} /></Link>
             </div>
         </div>
     </div>

@@ -22,6 +22,6 @@ function App(){
     </Routes>
   </Router>)
 }
-// Make the Routes work
+
 
 export default App

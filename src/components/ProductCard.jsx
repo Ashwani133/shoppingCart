@@ -4,9 +4,11 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { WishlistState } from '../items';
 import { useRecoilValue, useRecoilState } from 'recoil';
 import { CartItemState } from '../store/CartItemState';
+import { Link, useLocation } from 'react-router-dom';
 
 
 export function ProductCard({image,name,price,reviews,id}){
+    const location = useLocation()
     const allItemList = useRecoilValue(WishlistState)
     const [cartItemState, setcartItemState] = useRecoilState(CartItemState)
     function handleAddToCartClick(id){
@@ -28,10 +30,11 @@ export function ProductCard({image,name,price,reviews,id}){
     return <div className="h-[100vh] sticky top-0 z-100 relative flex justify-center items-center">
         <div className="h-[85%] w-[85%] bg-custom-gradient shadow-[0px_10px_30px_5px_hsl(214.29_17.41%_40%)] shadow-[0px_10px_30px_5px_hsl(214.29_17.41%_40%)] rounded p-10">
             <div className='flex justify-between'>
-                <p className='font-dancingScript text-primary text-2xl font-extrabold hover:bg-gray-900 cursor-pointer'>
-                    Amazing cart
+                <p className={`font-dancingScript text-primary text-2xl font-extrabold ${location.pathname ==='/wishlist'?'hover:bg-[hsl(18.12_99.02%_60%)] p-1 rounded cursor-pointer':''}`}>
+                <Link className={`${location.pathname === '/wishlist'?'cursor-pointer':'cursor-text'}`} to='/'>Amazing cart</Link>
                 </p>
-                <FontAwesomeIcon icon={faCartShopping} className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer'/></div>
+                <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer'/></Link>
+                </div>
             <div className='md:flex justify-center items-center p-10'>
             <div className="flex-1 flex justify-center items-center flex-col">
                 <p className="font-poppins text-2xl md:text-4xl lg:text-6xl tracking-tighter text-primary font-black">{name}</p>
