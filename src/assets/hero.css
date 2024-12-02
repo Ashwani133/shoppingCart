@@ -1,0 +1,41 @@
+.tt-1 {
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  .tt-2 {
+    transform: translateX(-100%);
+    animation: slideIn 1.5s ease-out forwards;
+  }
+
+  .tt-3 {
+    transform: translateX(-100%);
+    animation: slideIn 2s ease-out forwards;
+  }
+ 
+
+  .tt-img,  .text-black button, .fade {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; /* Adjust duration as needed */
+  }
+
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-80%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}

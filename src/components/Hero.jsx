@@ -1,20 +1,21 @@
+import '../assets/hero.css'
 import orangeCart from '../assets/images/orangeCart-Photoroom.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom'
+import hero from '../assets/images/hero.png'
+
 
 export function Hero(){
-    return <div>
-        <div className='absolute right-10 bottom-10 sm:right-16 sm:bottom-16 md:right-20 md:bottom-20 h-[40%] sm:h-[50%] md:h-[60%] w-[50%] sm:w-[60%] md:w-[60%] opacity-65'>
-            <img src={orangeCart} alt="shopping cart" className='h-full w-full object-contain'/>
+    return <div className='w-[90%]'>
+        <div className='flex justify-between items-center'>
+        <div className='text-black '>
+            <div className='lg:text-6xl md:text-6xl font-cinzel font-semibold tracking-tight tt-1'>shop smart</div>
+            <div className='lg:text-6xl md:text-6xl font-cinzel font-semibold tracking-tight text-left tt-2'>& live <span className='text-secondary font-ptSerif font-medium uppercase'>fashionably</span></div>
+            <div className='lg:text-6xl md:text-6xl font-medium tracking-tight text-secondary font-ptSerif uppercase tt-3'> better <span className='text-black font-cinzel font-semibold'>everyday</span></div>
+            <Link to='/wishlist'><button className='px-16 py-4 bg-[hsl(18.12_99.02%_60%)] text-xl font-bold text-white rounded mt-10 shadow-xl active:scale-95 font-ptSerif uppercase tracking-widest'>Shop now</button></Link>
         </div>
-        <div className='relative'>
-        <div className="font-dancingScript text-4xl md:text-6xl font-black text-primary">Amazing</div>
-        <div className="font-poppins md:text-9xl text-6xl font-black tracking-tighter text-primary">shopping cart</div>
-        </div>
-        <Link to='/wishlist'><button className='p-2 px-10 bg-[hsl(18.12_99.02%_60%)] font-bold text-primary rounded opacity-85 hover:opacity-100 mt-4 shadow-xl active:scale-95'>Shop now</button></Link>
-        <div className='text-center mt-4'>
-            <div><FontAwesomeIcon icon={faAnglesDown} /></div>
+        <div className='w-[40%] tt-img'><img src={hero} alt="" /></div>
         </div>
     </div>
 }

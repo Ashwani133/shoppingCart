@@ -1,0 +1,17 @@
+.cursor-pointer a:hover::after{  
+    width: 100%; 
+}
+.cursor-pointer a{position: relative;}
+.cursor-pointer a::after{
+   position: absolute; 
+   transition: width 0.3s ease-in-out;  
+   width: 0%;
+   content: "";
+    height:2.5px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+

@@ -10,9 +10,15 @@ export default {
       fontFamily: {
         dancingScript: ["Dancing Script", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
+        cinzel: ["Cinzel", "sans-serif"],
+        cabinSketch: ["Cabin Sketch", "sans-serif"],
+        pacifico: ["Pacifico"],
+        ptSerif: ["PT Serif"],
       },
       colors: {
         primary: "hsl(240deg 4.76% 95.88%)",
+        secondary: "hsl(18.12deg 99.02% 60%)",
       },
     },
   },
