@@ -19,6 +19,27 @@
     animation: fadeIn 2s ease-in-out forwards; /* Adjust duration as needed */
   }
 
+  .tt-icon1{
+    transform: translateX(10%);
+    animation: slideInFromLeft 3s ease-out forwards;
+    animation-delay: 2s;
+  }
+
+  .tt-icon2{
+    transform: translateX(-100%);
+    animation: slideInFromRight 3.5s ease-out forwards;
+    animation-delay: 2s;
+  }
+
+  .heroImageUnhide{
+    opacity: 0;
+    animation: fadeInOverlap 2s ease-in-out forwards;
+  }
+
+  .heroImageHide{
+    opacity: 0;
+    animation: fadeOutOverlap 2s ease-in-out forwards;
+  }
 
   @keyframes fadeIn {
     0% {
@@ -26,6 +47,24 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @keyframes fadeInOverlap{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOutOverlap{
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 
@@ -38,4 +77,44 @@
       transform: translateX(0);
       opacity: 1;
     }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;    
+  }
+
+  75% {
+    opacity: 0.7;    
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(10%);
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;    
+  }
+
+  75% {
+    opacity: 0.7;    
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
 }

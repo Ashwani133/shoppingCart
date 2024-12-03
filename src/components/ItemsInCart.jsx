@@ -22,10 +22,10 @@ export function ItemsInCart({image,name,quantity,price,id}){
     <div className='max-h-[15%] max-w-[15%]'><img src={image} alt="" className=''/></div>
     <div className='flex items-center justify-between w-[100%] p-4'>
     <div>
-        <div className='text-primary'>{name}</div>
-        <div><button onClick={() => removeItem(id)} className="p-1 bg-gray-500 text-primary active:scale-95"><FontAwesomeIcon icon={faMinus} /></button><span className='p-1 text-primary'>{quantity}</span><button onClick={() => addItem(id)} className="p-1 bg-gray-500 active:scale-95 text-primary"><FontAwesomeIcon icon={faPlus} /></button></div>
+        <div className=''>{name}</div>
+        <div><button onClick={() => removeItem(id)} className="p-1 bg-gray-500 active:scale-95"><FontAwesomeIcon icon={faMinus} /></button><span className='p-1 '>{quantity}</span><button onClick={() => addItem(id)} className="p-1 bg-gray-500 active:scale-95"><FontAwesomeIcon icon={faPlus} /></button></div>
     </div>
-    <div className='text-primary'>
+    <div className=''>
         <span className='p-1'><FontAwesomeIcon icon={faIndianRupeeSign} /></span>{quantity*price}
     </div>
     </div>

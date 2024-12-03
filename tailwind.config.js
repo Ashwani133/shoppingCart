@@ -19,6 +19,7 @@ export default {
       colors: {
         primary: "hsl(240deg 4.76% 95.88%)",
         secondary: "hsl(18.12deg 99.02% 60%)",
+        customOrange: "#f69f1a",
       },
     },
   },
