@@ -1,5 +1,4 @@
 import { atom } from "recoil";
-import Mouse from './assets/images/Mouse.png'
 import Speaker from './assets/images/Modern Portable Speaker in Natural Light-Photoroom-Photoroom.png'
 import Earpods from './assets/images/Earpods.png'
 import Headphones from './assets/images/Headphones .png'
