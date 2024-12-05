@@ -15,7 +15,7 @@ export function Cart(){
 
 
     return <div className="h-[100vh] sticky top-0 z-100 relative flex justify-center items-center bg-white">
-    <div className="h-[85%] w-[90%] sm:w-[85%] bg-[hsl(18.12_99.02%_60%)] shadow-[0px_10px_30px_5px_hsl(214.29_17.41%_40%)] rounded-lg p-10">
+    <div className="h-[85%] w-[90%] sm:w-[85%] bg-[hsl(18.12_99.02%_60%)] shadow-[0px_10px_30px_5px_hsl(214.29_17.41%_40%)] rounded-lg p-10 bg-gradient-to-b from-[hsl(18.12_99.02%_60%)] via-gray-200 to-black">
         <div className='flex justify-between items-center flex-wrap gap-2'>
         <div className={`font-dancingScript text-2xl font-extrabold
         ${location.pathname === '/cart'?'inline p-1 cursor-pointer active:scale-95':'cursor-text'}`}><Link className={`${location.pathname === '/cart'?'cursor-pointer':'cursor-text'}`} to='/'>Amazing cart</Link></div>

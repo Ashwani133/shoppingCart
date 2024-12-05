@@ -1,14 +1,8 @@
 import { Navbar } from "./Navbar"
 import { Hero } from "./Hero"
 export function Landing(){
- return <div className="sticky top-0 h-[100vh] flex justify-center items-center z-0">
-        <div className="h-[95%] w-[85%]   rounded-lg p-10">
-            <div className="h-[15%]">
-            <Navbar />
-            </div>
-            <div className="h-[75%] flex">
-            <Hero />
-            </div>
-        </div>
+ return <div className="sticky top-0 h-[100vh] z-0">
+        <Navbar />
+        <div className="p-2 px-10 mt-20"><Hero /></div>
     </div>
 }

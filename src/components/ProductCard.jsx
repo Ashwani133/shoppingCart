@@ -9,7 +9,8 @@ import '../assets/hero.css'
 
 
 
-export function ProductCard({image,name,price,reviews,id}){
+export function ProductCard({image,name,price,reviews,id,gradient}){
+    console.log(gradient)
     const location = useLocation()
     const allItemList = useRecoilValue(WishlistState)
     const [cartItemState, setcartItemState] = useRecoilState(CartItemState)
@@ -30,12 +31,12 @@ export function ProductCard({image,name,price,reviews,id}){
 
 
     return <div className="h-[100vh] sticky top-0 z-100 relative flex justify-center items-center bg-white">
-        <div className="h-[85%] w-[85%] bg-black rounded-lg p-10">
+        <div className={`h-[85%] w-[85%] bg-black rounded-lg p-10 shadow-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] bg-gradient-to-b ${gradient}`}>
             <div className='flex justify-between'>
                 <p className={`font-dancingScript text-primary text-2xl font-extrabold ${location.pathname ==='/wishlist'?'p-1 rounded cursor-pointer active:scale-95':''}`}>
                 <Link className={`${location.pathname === '/wishlist'?'cursor-pointer':'cursor-text'}`} to='/'>Amazing cart</Link>
                 </p>
-                <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} className='bg-[hsl(18.12_99.02%_60%)] p-1 hover:bg-gray-100 cursor-pointer active:scale-95'/></Link>
+                <Link to='/cart'><FontAwesomeIcon icon={faCartShopping} className=' p-1 hover:bg-gray-100 cursor-pointer active:scale-95'/></Link>
                 </div>
             <div className='md:flex justify-center items-center p-10'>
             <div className="flex-1 flex justify-center items-center flex-col fade">
